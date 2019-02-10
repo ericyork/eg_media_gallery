@@ -1,48 +1,47 @@
+:root {
+  --prime: #333;
+  --text: #333;
+  --rev-text: #EEE;
+  --accent: #2E9CCA;
+  --bg: #EEE;
+}
+
 body {
   padding: .25rem;
   font-size: 16px;
-  color: #333;
-  background-color: #F2F2F2;
-}
-h4 {
-  font-size: 1.4em;
-  font-weight: 800;
-  margin-top: 1.67em;
-  margin-bottom: .33em;
-  color: #DDD;
-}
-div {
-  padding: .25em;
-  margin: .75em 0 .75em 0;
-  background-color: #CCC;
+  color: var(--text);
+  background-color: var(--bg);
 }
 /*------------------
---  Flex Styles  --
+--  Nav Styles  --
 ------------------*/
-.main-nav {
-  padding: .5rem;
+.topnav {
+  background-color: var(--prime);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
 }
-.nav-item {
-  flex-basis: 25%;
-  border-radius: 4px;
-  margin: .25rem;
-  padding: .5em;
+a.nav-item {
+  border-bottom: 1px solid var(--rev-text);
   text-align: center;
+  padding: .75em;
+  margin: auto 0;
+  color: var(--rev-text);
+  transition: color 250ms ease-in-out;
 }
-.nav-item:hover {
-  color: red;
+a.nav-item:hover {
+  color: var(--accent);
   cursor: pointer;
 }
 .label {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 1rem;
 }
 /*-- Nav media queries --*/
 @media screen and (min-width: 550px) {
-  .main-nav {flex-direction: row;}
+  .topnav {flex-direction: row;}
+  a.nav-item {border-bottom: 1px solid transparent;}
 }
 /*-- ----------
 - GRID STYLES -
@@ -52,11 +51,6 @@ div {
   display: grid;
   grid-gap: .5rem;
   grid-template-columns: 1fr;
-}
-.main-grid-item {
-  border-radius: 4px;
-  padding: .5em;
-  text-align: center;
 }
 /*-- grid media queries--*/
 @media screen and (min-width: 550px) {
@@ -73,4 +67,74 @@ div {
 }
 @media screen and (min-width: 1440px) {
   .main-grid {grid-template-columns: repeat(6, 1fr);}
+}
+/*-- media card styles -- */
+.main-grid-item {
+  border-radius: 4px;
+  padding: .5em;
+  border: 1px solid var(--prime);
+}
+.thumb {
+  background-image: url('https://picsum.photos/300/200/?random');
+  padding-bottom: 56%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 4px 4px 0 0;
+}
+/*-- Card Backgrounds --*/
+.one .thumb {background-image: url('https://picsum.photos/300/200/?image=14');}
+.two .thumb {background-image: url('https://picsum.photos/300/200/?image=24');}
+.three .thumb {background-image: url('https://picsum.photos/300/200/?image=35');}
+.four .thumb {background-image: url('https://picsum.photos/300/200/?image=44');}
+.five .thumb {background-image: url('https://picsum.photos/300/200/?image=54');}
+.six .thumb {background-image: url('https://picsum.photos/300/200/?image=59');}
+.seven .thumb {background-image: url('https://picsum.photos/300/200/?image=71');}
+.eight .thumb {background-image: url('https://picsum.photos/300/200/?image=32');}
+.nine .thumb {background-image: url('https://picsum.photos/300/200/?image=19');}
+.ten .thumb {background-image: url('https://picsum.photos/300/200/?image=06');}
+.eleven .thumb {background-image: url('https://picsum.photos/300/200/?image=23');}
+.twelve .thumb {background-image: url('https://picsum.photos/300/200/?image=60');}
+ /*--
+} extra for readability--*/
+.card-content {
+  padding: 0 .5em .7em .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-title {
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
+  align-self: flex-start;
+  color: var(--text);
+}
+.card-text {
+  font-size: .80em;
+  line-height: 1.2;
+  align-self: flex-start;
+  color: var(--text);
+}
+button.card-more {
+  background: transparent;
+  padding: .4em .7em;
+  border-radius: 200px;
+  font-size: .75em;
+  text-decoration: none;
+  letter-spacing: -.75px;
+  cursor: pointer;
+}
+button.card-more, button.card-more:visited {
+  color: var(--prime);
+  border: 1.5px solid var(--prime);
+  transition: all 250ms ease-in-out;
+}
+button.card-more:hover, button.card-more:active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+footer {
+  background-color: var(--prime);
+  padding: .25rem;
+  color: var(--rev-text);
+  text-align: center;
 }
