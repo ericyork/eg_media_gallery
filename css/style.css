@@ -69,7 +69,7 @@ a.nav-item:hover {
 - GRID STYLES -
 ---------------*/
 .main-grid {
-  margin-top: 3.5rem;
+  margin-top: 3.75rem;
   padding: .5rem;
   display: grid;
   grid-gap: 1.5rem;
