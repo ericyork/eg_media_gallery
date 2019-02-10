@@ -1,0 +1,94 @@
+body {
+  padding: .25rem;
+  font-size: 16px;
+  color: #333;
+  background-color: #222;
+}
+h4 {
+  font-size: 1.4em;
+  font-weight: 800;
+  margin-top: 1.67em;
+  margin-bottom: .33em;
+  color: #DDD;
+}
+div {
+  padding: .25em;
+  margin: .75em 0 .75em 0;
+  background-color: #DDD;
+}
+.material-icons {
+  vertical-align: top;
+  font-size: 1em;
+}
+/*------------------
+--  Flex Styles  --
+------------------*/
+.flex-container {
+  border: 2px dashed #DDD;
+  padding: .5rem;
+  display: flex;
+  /*-- uncomment along with media queries
+  flex-direction: column;
+  --*/
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-item {
+  flex-basis: 25%;
+  border-radius: 4px;
+  margin: .25rem;
+  padding: .5em;
+  text-align: center;
+}
+.label {
+  font-size: 1em;
+  font-weight: 600;
+}
+/*-- flex media queries
+@media screen and (min-width: 550px) {
+  .flex-container {flex-direction: row;}
+}--*/
+/*--correct hover target
+.flex-item:hover {
+  color: red;
+  cursor: pointer;
+}--*/
+/*-- incorrect hover target--*/
+.label:hover {
+  color: #00F;
+}
+/*-- ----------
+- GRID STYLES -
+---------------*/
+.grid-container {
+  border: 2px dashed #DDD;
+  padding: .5rem;
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-columns: repeat(6, 1fr);
+  /*-- uncomment along with media queries
+  grid-template-columns: 1fr;
+  --*/
+}
+.grid-item {
+  border-radius: 4px;
+  padding: .5em;
+  text-align: center;
+}
+/*-- grid media queries
+@media screen and (min-width: 550px) {
+  .grid-container{grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (min-width: 768px) {
+  .grid-container{grid-template-columns: repeat(3, 1fr);}
+}
+@media screen and (min-width: 990px) {
+  .grid-container{grid-template-columns: repeat(4, 1fr);}
+}
+@media screen and (min-width: 1280px) {
+  .grid-container{grid-template-columns: repeat(4, 1fr);}
+}
+@media screen and (min-width: 1440px) {
+  .grid-container{grid-template-columns: repeat(6, 1fr);}
+}
+--*/
