@@ -10,7 +10,7 @@ body {
   padding: .25rem;
   font-size: 16px;
   color: var(--text);
-  background-color: var(--bg);
+  background-color: var(--prime);
 }
 /*------------------
 --  Nav Styles  --
@@ -72,7 +72,8 @@ a.nav-item:hover {
 .main-grid-item {
   border-radius: 4px;
   padding: .5em;
-  border: 1px solid var(--prime);
+  background-color: var(--bg);
+  transition: border 250ms ease-in-out;
 }
 .thumb {
   background-image: url('https://picsum.photos/300/200/?random');
@@ -118,10 +119,10 @@ button.card-more {
   background: transparent;
   padding: .4em .7em;
   border-radius: 200px;
-  font-size: .75em;
+  font-size: .7em;
   text-decoration: none;
-  letter-spacing: -.75px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 button.card-more, button.card-more:visited {
   color: var(--prime);
