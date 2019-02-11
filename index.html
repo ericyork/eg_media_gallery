@@ -30,22 +30,55 @@
       </a>
       <a href="javascript:void(0);" class="nav-item trigram" onclick="navToggle()">&#9776;</a>
     </nav>
+    <section class="slideshow">
+      <div class="slideshow-wrapper">
+        <div class="slide fade">
+          <div class="numberof">1 of 4</div>
+          <img src="https://picsum.photos/1280/448/?image=12"/>
+          <div class="captiontext">A beautiful view of it.</div>
+        </div><!-- end .slide.fade -->
+        <div class="slide fade">
+          <div class="numberof">2 of 4</div>
+          <img src="https://picsum.photos/1280/448/?image=13"/>
+          <div class="captiontext">The whole thing in all its glory.</div>
+        </div><!-- end .slide.fade -->
+        <div class="slide fade">
+          <div class="numberof">3 of 4</div>
+          <img src="https://picsum.photos/1280/448/?image=15"/>
+          <div class="captiontext">Out at the edges of it.</div>
+        </div><!-- end .slide.fade -->
+        <div class="slide fade">
+          <div class="numberof">4 of 4</div>
+          <img src="https://picsum.photos/1280/448/?image=16"/>
+          <div class="captiontext">Deep inside the heart of it.</div>
+        </div><!-- end .slide.fade -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;<!--unicode for less-than-sign--></a>
+          <a class="next" onclick="plusSlides(1)">&#10095;<!--unicode for greater-than-sign--></a>
+      </div><!--end slideshow-wrapper-->
+      <br>
+      <div class="text-center">
+        <span class="indicator" onclick="currentSlide(1)"><img src="https://picsum.photos/1280/448/?image=12"/></span>
+        <span class="indicator" onclick="currentSlide(2)"><img src="https://picsum.photos/1280/448/?image=13"/></span>
+        <span class="indicator" onclick="currentSlide(3)"><img src="https://picsum.photos/1280/448/?image=15"/></span>
+        <span class="indicator" onclick="currentSlide(4)"><img src="https://picsum.photos/1280/448/?image=16"/></span>
+      </div>
+    </section>
     <main class="main-grid">
       <div class="main-grid-item one">
         <div class="thumb"></div><hr />
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#09" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
-      <div id="alt" class="modal">
+      <div id="09" class="modal">
   		  <div class="modal-content">
   		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="https://picsum.photos/800/450/?image=14" alt="example" />
+            <img src="https://picsum.photos/800/450/?image=09" alt="example" />
   					<div class="eg-text">
-  						<h3>Bait-and-Switch</h3>
+  						<h3>Just a simple title</h3>
   						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   					</div>
   				</div><!--end .modal-body-->
@@ -56,89 +89,221 @@
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#24" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="24" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=24" alt="example" />
+  					<div class="eg-text">
+  						<h3>Just a simple title</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
       <div class="main-grid-item three">
         <div class="thumb"></div><hr />
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#35" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="35" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=35" alt="example" />
+  					<div class="eg-text">
+  						<h3>Just a simple title</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
       <div class="main-grid-item four">
         <div class="thumb"></div><hr />
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#44" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="44" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=44" alt="example" />
+  					<div class="eg-text">
+  						<h3>Just a simple title</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
       <div class="main-grid-item five">
         <div class="thumb"></div><hr />
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#54" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="54" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=54" alt="example" />
+  					<div class="eg-text">
+  						<h3>Just a simple title</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
       <div class="main-grid-item six">
         <div class="thumb"></div><hr />
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#59" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="59" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=59" alt="example" />
+  					<div class="eg-text">
+  						<h3>Just a simple title</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
       <div class="main-grid-item seven">
         <div class="thumb"></div><hr />
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#71" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="71" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=71" alt="example" />
+  					<div class="eg-text">
+  						<h3>Just a simple title</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
       <div class="main-grid-item eight">
         <div class="thumb"></div><hr />
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#32" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="32" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=32" alt="example" />
+  					<div class="eg-text">
+  						<h3>Just a simple title</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
       <div class="main-grid-item nine">
         <div class="thumb"></div><hr />
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#19" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="19" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=19" alt="example" />
+  					<div class="eg-text">
+  						<h3>Just a simple title</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
       <div class="main-grid-item ten">
         <div class="thumb"></div><hr />
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#06" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="06" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=06" alt="example" />
+  					<div class="eg-text">
+  						<h3>Just a simple title</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
       <div class="main-grid-item eleven">
         <div class="thumb"></div><hr />
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#23" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="23" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=23" alt="example" />
+  					<div class="eg-text">
+  						<h3>Just a simple title</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
       <div class="main-grid-item twelve">
         <div class="thumb"></div><hr />
         <div class="card-content">
           <h4 class="card-title">Just a sample title</h4>
           <p class="card-text">Lorem ipsum dolor sit ament mei eu dolores constituam. Cu audire volumus . . .</p>
-          <button data-modal="#alt" class="card-more button">View</button>
+          <button data-modal="#60" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="60" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=60" alt="example" />
+  					<div class="eg-text">
+  						<h3>Just a simple title</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
     </main>
     <footer>
       <p>&copy; 2019 Eric J. York</p>
