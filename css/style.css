@@ -310,3 +310,9 @@ footer {
   color: var(--rev-text);
   text-align: center;
 }
+footer a {
+  color: var(--rev-text);
+}
+footer a:hover {
+  color: var(--rev-accent);
+}
