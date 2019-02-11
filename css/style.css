@@ -186,7 +186,6 @@ a.nav-item:hover {
   background-color: var(--bg);
 }
 .thumb {
-  background-image: url('https://picsum.photos/300/200/?random');
   padding-bottom: 56%;
   background-size: cover;
   background-position: center center;
