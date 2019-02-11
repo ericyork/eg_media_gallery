@@ -19,6 +19,7 @@ i.fas {
 ------------------*/
 .topnav {
   margin-top: -.25rem;
+  padding-bottom: .5rem;
   background-color: var(--prime);
   display: flex;
   flex-direction: column;
