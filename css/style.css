@@ -94,6 +94,10 @@ a.nav-item:hover {
   font-size: 18px; /*-- sets arrow font size --*/
   transition: 0.6s ease; /*-- sets transition speed for arrow hover--*/
   border-radius: 0 3px 3px 0; /*-- slightly rounds inside borders --*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; /*-- prevents users from selecting buttons --*/
 }
 .next {
   right: 0; /*-- positions next arrow hard right --*/
