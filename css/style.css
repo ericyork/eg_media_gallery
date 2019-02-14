@@ -279,6 +279,10 @@ button.card-more:hover, button.card-more:active {
    top: 5px;
    right: 4.25%;
    transition: all .2s ease-in;
+   text-shadow: 2px 2px 5px #FAFAFA,
+               -2px -2px 5px #FAFAFA,
+               2px -2px 5px #FAFAFA,
+               -2px 2px 5px #FAFAFA;
 }
 .close:hover,
 .close:focus {
