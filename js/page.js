@@ -26,15 +26,15 @@ function currentSlide(n) { // creates function identifying the current slide, us
 
 function showSlides(n) { // creates the showSlides function using n as the parameter
   var i; // creates a generic variable to be used as an identifier
-  var slides = document.getElementsByClassName("slide"); // sets variable slides = to element.slide
-  var indicator = document.getElementsByClassName("indicator"); // sets indicator to element.indicator
-  if (n > slides.length) {slideIndex = 1} // if n is greater than the length of slides string, index is set to 1
-  if (n < 1) {slideIndex = slides.length} // if n is less than 1, set index to slides string length
-  for (i = 0; i < slides.length; i++) { // when i=0, and less than slides string length, increment i
+  var slides = document.getElementsByClassName("slide"); // sets variable slides = to # of slides
+  var indicator = document.getElementsByClassName("indicator"); // sets indicator to # of indicators
+  if (n > slides.length) {slideIndex = 1} // if n is greater than the # of slides, index is set to 1
+  if (n < 1) {slideIndex = slides.length} // if n is less than 1, set index to # of slides
+  for (i = 0; i < slides.length; i++) { // when i=0, and is less than # of slides, increment i by 1
       slides[i].style.display = "none"; // then hide those slides by setting display to none
   }
-  for (i = 0; i < indicator.length; i++) { // when i is greater, and less than indicator, increment it
-      indicator[i].className = indicator[i].className.replace(" active", ""); // and the associated indicator gets the .active class removed from it
+  for (i = 0; i < indicator.length; i++) { // when i is = to 0 and less than # of indicators, increment i by 1
+      indicator[i].className = indicator[i].className.replace(" active", ""); // and the associated indicators gets the .active class removed from it
   }
   slides[slideIndex-1].style.display = "block"; // display slides
   indicator[slideIndex-1].className += " active"; // make indicator active
