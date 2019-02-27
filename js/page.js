@@ -2,9 +2,9 @@
 // Note: Function parameters are the names listed in the function definition, while function arguments are the real values passed to (and received by) the function.
 
 // Mobile Navigaton Toggle
-function navToggle() { //creates a new function named navToggle
-  var x = document.getElementById("main-nav"); //creates a variable set to #main-nav
-    if (x.className === "topnav") { //if #main-nav has a class of .topnav,
+function navToggle() { // creates a new function named navToggle
+  var x = document.getElementById("main-nav"); // creates a variable set to #main-nav
+    if (x.className === "topnav") { // if #main-nav has a class of .topnav,
     x.className += " responsive";   // then add a new class
   } else {                          // if it doesn't,
     x.className = "topnav";         // set class to .topnav
@@ -33,21 +33,21 @@ function showSlides(n) { // creates the showSlides function using n as the param
   for (i = 0; i < slides.length; i++) { // when i=0, and less than slides string length, increment i
       slides[i].style.display = "none"; // then hide those slides by setting display to none
   }
-  for (i = 0; i < indicator.length; i++) { //when i is greater, and less than indicator, increment it
+  for (i = 0; i < indicator.length; i++) { // when i is greater, and less than indicator, increment it
       indicator[i].className = indicator[i].className.replace(" active", ""); // and the associated indicator gets the .active class removed from it
   }
-  slides[slideIndex-1].style.display = "block"; //display slides
-  indicator[slideIndex-1].className += " active"; //make indicator active
+  slides[slideIndex-1].style.display = "block"; // display slides
+  indicator[slideIndex-1].className += " active"; // make indicator active
 }
 
 // Image modal functions - Requires jQuery!!!
-$(".button").on("click", function() { //when item with class of button is clicked, fire function
-  var modal = $(this).data("modal"); //sets modal var equal to data attribute
-  $(modal).show(); //opens up modal (much code hidden here by jQuery)
+$(".button").on("click", function() { // when item with class of button is clicked, fire function
+  var modal = $(this).data("modal"); // sets modal var equal to data attribute
+  $(modal).show(); // opens up modal (much code hidden here by jQuery)
 });
 $(".modal").on("click", function(e) { // sets up click function
   var className = e.target.className; // var className set to event target
-  if(className === "modal" || className === "close"){ //if conditions are met...
-    $(this).closest(".modal").hide(); //then hide the modal
-  } //closes if-statement
-}); //closes function
+  if(className === "modal" || className === "close"){ // if conditions are met...
+    $(this).closest(".modal").hide(); // then hide the modal
+  } // closes if-statement
+}); // closes function
