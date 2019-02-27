@@ -16,8 +16,8 @@ var slideIndex = 1; // creates a new variable, names it slideIndex, and sets it 
 
 showSlides(slideIndex); // uses the index variable as the parameter of the showSlides function
 
-function plusSlides(n) { // function for incrementing (adding to) slideIndex, takes n as it's parameter
-  showSlides(slideIndex += n); // function runs showSlides with index + n as it's parameter
+function plusSlides(n) { // function for incrementing (adding to) slideIndex, takes n as its parameter
+  showSlides(slideIndex += n); // function runs showSlides with index + n as its parameter
 }
 
 function currentSlide(n) { // creates function identifying the current slide, using n as the parameter
