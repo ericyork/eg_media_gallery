@@ -12,7 +12,7 @@ function navToggle() { //creates a new function named navToggle
 } //closes function
 
 // Slideshow Functions
-var slideIndex = 1; // creates a new variable, names it slideIndex, and sets it = to 1, then ends;
+var slideIndex = 1; // creates a new variable, names it slideIndex, and sets it = to 1
 
 showSlides(slideIndex); // uses the index variable as the parameter of the showSlides function
 
