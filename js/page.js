@@ -1,5 +1,7 @@
-//* Page Scripts
-//* Mobile Navigaton Toggle
+// Page Scripts
+// Note: Function parameters are the names listed in the function definition, while function arguments are the real values passed to (and received by) the function.
+
+// Mobile Navigaton Toggle
 function navToggle() { //creates a new function named navToggle
   var x = document.getElementById("main-nav"); //creates a variable set to #main-nav
     if (x.className === "topnav") { //if #main-nav has a class of .topnav,
@@ -9,36 +11,36 @@ function navToggle() { //creates a new function named navToggle
   } //closes if-else
 } //closes function
 
-//* Slideshow Functions
-var slideIndex = 1; //creates the index variable and initializes to 1
-showSlides(slideIndex); //passes new variable to the showSlides function as an argument
+// Slideshow Functions
+var slideIndex = 1; // creates a new variable, names it slideIndex, and sets it = to 1, then ends;
 
-function plusSlides(n) { //creates function for adding to slide index
-  showSlides(slideIndex += n); /*-- sets how much to increase index by --*/
+showSlides(slideIndex); // uses the index variable as the parameter of the showSlides function
+
+function plusSlides(n) { // function for incrementing (adding to) slideIndex, takes n as it's parameter
+  showSlides(slideIndex += n); // function runs showSlides with index + n as it's parameter
 }
 
-function currentSlide(n) { /*-- sets current slide index --*/
-  showSlides(slideIndex = n);
+function currentSlide(n) { // creates function identifying the current slide, using n as the parameter
+  showSlides(slideIndex = n); // function runs showSlides with index = to n as the parameter
 }
 
-function showSlides(n) { //slide rotation function
-  var i; // creates a basic variable
-  var slides = document.getElementsByClassName("slide"); // targets slides
-  var indicator = document.getElementsByClassName("indicator"); //targets indicators
-  if (n > slides.length) {slideIndex = 1} //if n is greater slides string length, index set to 1
-  if (n < 1) {slideIndex = slides.length} //if n is less, set index to slides string length
-  for (i = 0; i < slides.length; i++) { //when i=0, and less than slides string length, increment i
-      slides[i].style.display = "none"; //then hide that slide with display: none
+function showSlides(n) { // creates the showSlides function using n as the parameter
+  var i; // creates a generic variable to be used as an identifier
+  var slides = document.getElementsByClassName("slide"); // sets variable slides = to element.slide
+  var indicator = document.getElementsByClassName("indicator"); // sets indicator to element.indicator
+  if (n > slides.length) {slideIndex = 1} // if n is greater than the length of slides string, index is set to 1
+  if (n < 1) {slideIndex = slides.length} // if n is less than 1, set index to slides string length
+  for (i = 0; i < slides.length; i++) { // when i=0, and less than slides string length, increment i
+      slides[i].style.display = "none"; // then hide those slides by setting display to none
   }
-  for (i = 0; i < indicator.length; i++) { //when i is greater, increment it
-      indicator[i].className = indicator[i].className.replace(" active", ""); //and the associated indicator gets the .active class added to it
+  for (i = 0; i < indicator.length; i++) { //when i is greater, and less than indicator, increment it
+      indicator[i].className = indicator[i].className.replace(" active", ""); // and the associated indicator gets the .active class removed from it
   }
   slides[slideIndex-1].style.display = "block"; //display slides
   indicator[slideIndex-1].className += " active"; //make indicator active
 }
 
-//* New Modal Scripts
-// Requires jQuery!!!
+// Image modal functions - Requires jQuery!!!
 $(".button").on("click", function() { //when item with class of button is clicked, fire function
   var modal = $(this).data("modal"); //sets modal var equal to data attribute
   $(modal).show(); //opens up modal (much code hidden here by jQuery)
