@@ -260,7 +260,7 @@ button.card-more:hover, button.card-more:active {
    width: 100%; /*-- fills the space --*/
    height: 100%; /*-- fills the space --*/
    overflow: auto; /*-- handles overflow as normal. --*/
-   background-color: rgba(10, 10, 10, 0.85); /*--slightly transparent--*/
+   background-color: rgba(10, 10, 10, .4); /*--slightly transparent--*/
 }
 .modal-content {
    background-color: var(--bg);
