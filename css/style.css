@@ -200,7 +200,7 @@ a.nav-item:hover {
   border-radius: 4px 4px 0 0; /*-- rounds top-left and top-right edges --*/
 }
 /*-- Card Backgrounds --*/
-.one .thumb {background-image: url('https://picsum.photos/300/200/?image=09');}
+.one .thumb {background-image: url('https://picsum.photos/300/200/?image=0');}
 .two .thumb {background-image: url('https://picsum.photos/300/200/?image=24');}
 .three .thumb {background-image: url('https://picsum.photos/300/200/?image=35');}
 .four .thumb {background-image: url('https://picsum.photos/300/200/?image=44');}
@@ -209,7 +209,7 @@ a.nav-item:hover {
 .seven .thumb {background-image: url('https://picsum.photos/300/200/?image=71');}
 .eight .thumb {background-image: url('https://picsum.photos/300/200/?image=32');}
 .nine .thumb {background-image: url('https://picsum.photos/300/200/?image=19');}
-.ten .thumb {background-image: url('https://picsum.photos/300/200/?image=06');}
+.ten .thumb {background-image: url('https://picsum.photos/300/200/?image=113');}
 .eleven .thumb {background-image: url('https://picsum.photos/300/200/?image=23');}
 .twelve .thumb {background-image: url('https://picsum.photos/300/200/?image=60');}
 /*----*/
