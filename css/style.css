@@ -24,7 +24,6 @@ i.fas { /*-- adds a little padding left and right on fontawesome icons --*/
   display: flex; /*-- creates a flex container --*/
   flex-direction: column; /*-- direction is for MOBILE screen sizes --*/
   justify-content: space-around; /*-- lays out menu items--*/
-  align-items: stretch; /*-- sets menu items to fill space vertically --*/
   align-content: center; /*-- vertically aligns menu items to center --*/
   position: fixed; /*-- makes the navbar stay at the top, even when scrolling--*/
   z-index: 1000; /*-- makes navbar always sit on top--*/
@@ -60,7 +59,7 @@ a.nav-item:hover {
 /*-- At screens BELOW 768px,  rules for mobile nav--*/
 @media screen and (max-width: 767px) {
   .topnav.responsive {align-items: center;} /*-- vertically centers--*/
-  .topnav.responsive a, .topnav.responsive span {display:inherit;} /*-- makes trigram visible --*/
+  .topnav.responsive a, .topnav.responsive span {display:inherit;} /*-- makes menu items visible --*/
   .topnav.responsive a:first-child {margin-top:1em;} /*-- adds space above first item --*/
   .topnav.responsive a:not(:last-child) {display:inherit; padding-top:1em;} /*-- makes items visible (but not the trigram) and adds space above them--*/
   .topnav.responsive a.more {margin-bottom: 1em;} /*-- adds margin below bottom item --*/
