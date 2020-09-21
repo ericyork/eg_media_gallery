@@ -7,9 +7,11 @@
 }
 body { /*-- Sets body defaults --*/
   padding: .25rem;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text);
   background-color: var(--prime);
+  width: 98%;
+  margin: 0 auto;
 }
 i.fas { /*-- adds a little padding left and right on fontawesome icons --*/
   padding: 0 .33em;
@@ -25,15 +27,14 @@ i.fas { /*-- adds a little padding left and right on fontawesome icons --*/
   flex-direction: column; /*-- direction is for MOBILE screen sizes --*/
   justify-content: space-around; /*-- lays out menu items--*/
   align-content: center; /*-- vertically aligns menu items to center --*/
-  position: fixed; /*-- makes the navbar stay at the top, even when scrolling--*/
-  z-index: 1000; /*-- makes navbar always sit on top--*/
-  width: 100%; /*-- makes navbar occupy full width of the page --*/
+  z-index: 1000; /*-- makes navbar always sit in the front, on the z-axis--*/
+  width: 100%; /*-- makes navbar occupy full width of the body --*/
 }
 a.nav-item {
   position: relative; /*-- overcomes negative margin in above rule --*/
   top: 4px; /*-- tweaks vertical position --*/
   text-align: center; /*-- center-aligns all text inside their boxes --*/
-  padding: .75em; /*-- provides padding inside menu items --*/
+  padding: .75em 0; /*-- provides padding inside menu items --*/
   margin: auto 0; /*-- centers menu text vertically --*/
   color: var(--rev-text);
   transition: color 250ms ease-in-out; /*-- specifies transition, duration, and easing --*/
@@ -68,7 +69,7 @@ a.nav-item:hover {
 }
 /*-- At screens 768px and ABOVE, set normal menu defaults --*/
 @media screen and (min-width: 768px) {
-  .topnav {display: flex; flex-direction: row; justify-content: space-around;}
+  .topnav {display: flex; flex-direction: row; justify-content: space-between;}
 }
 /*-- Styles for slideshow --*/
 .slideshow {
@@ -77,9 +78,7 @@ a.nav-item:hover {
 }
 .slideshow-wrapper {
   position: relative; /*-- this allows children to be position absolutely --*/
-  margin: auto; /*-- simple centering method--*/
-  margin-top: 2em; /*-- adds space above--*/
-  max-width: 1440px; /*-- contrains slideshow on largest screens --*/
+  margin: auto; /*-- simple centering method--*/  max-width: 100%; /*-- contrains slideshow on largest screens --*/
 }
 .slideshow-wrapper img {
   width: 100%; /*-- makes slideshow responsive in size --*/
@@ -108,9 +107,6 @@ a.nav-item:hover {
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8); /*-- gives a background for contrast on hover --*/
 }
-.text-center {
-  text-align: center; /*-- aligns indicators center --*/
-}
 .captiontext {
   background: rgba(0,0,0,0.4); /*-- transparent black background --*/
   color: #f2f2f2; /*-- sets color to almost white --*/
@@ -128,10 +124,13 @@ a.nav-item:hover {
   position: absolute; /*-- positions numberof text absolutely--*/
   top: 0; /*-- sets position hard to the top--*/
 }
+.text-center {
+  display: flex;
+}
 .indicator {
   cursor:pointer; /*-- changes hover cursor to the hand --*/
   height: auto; /*-- sets height of pics --*/
-  width: 24%; /*-- sets width of pics --*/
+  width: 25%; /*-- sets width of pics --*/
   margin: 0 2px; /*-- adds margin between pics --*/
   background-color: #bbb; /*-- sets background color to light gray --*/
   display: inline-block; /*-- displays in a horizontal line --*/
@@ -168,22 +167,25 @@ a.nav-item:hover {
 ---------------*/
 .main-grid {
   margin-top: 3.5rem; /*-- adds space above grid wrap --*/
-  padding: .5rem; /*-- adds padding inside grid wrap --*/
   display: grid; /*-- sets display mode --*/
   grid-gap: 1.5rem; /*-- creates gutters --*/
   grid-template-columns: 1fr; /*-- default mobile layout is 1-column--*/
 }
 /*-- grid media queries--*/
 @media screen and (min-width: 550px) { /*-- at screens between 550 and 767 --*/
+  body {width: 96%;}
   .main-grid {grid-template-columns: repeat(2, 1fr);}  /*-- 2 columnns --*/
 }
 @media screen and (min-width: 768px) {/*-- at screens between 768 and 989 --*/
+  body {width: 94%;}
   .main-grid {grid-template-columns: repeat(3, 1fr);} /*-- 3 columnns --*/
 }
 @media screen and (min-width: 990px) {/*-- at screens between 990 and 1271 --*/
+  body {width: 92%;}
   .main-grid {grid-template-columns: repeat(4, 1fr);} /*-- 4 columnns --*/
 }
 @media screen and (min-width: 1280px) {/*-- at screens 1280 and above --*/
+  body {width: 90%;}
   .main-grid {grid-template-columns: repeat(4, 1fr);} /*-- 4 columnns --*/
 }
 /*-- media card styles -- */
